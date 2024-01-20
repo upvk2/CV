@@ -40,8 +40,9 @@ body {
 }
 
 .resume .resume_left .resume_profile {
-  width: 100%;
-  height: 280px;
+  width: 90%;
+  height: 340px;
+  margin: 10% auto;
 }
 
 .resume .resume_left .resume_profile img {
@@ -117,28 +118,28 @@ body {
 }
 
 .resume .resume_left .resume_skills ul li .skill_name {
-  width: 25%;
+  width: 100%;
 }
 
-.resume .resume_left .resume_skills ul li .skill_progress {
+/* .resume .resume_left .resume_skills ul li {
   width: 60%;
   margin: 0 5px;
   height: 5px;
   background: #009fd9;
   position: relative;
-}
+} */
 
 .resume .resume_left .resume_skills ul li .skill_per {
   width: 15%;
 }
 
-.resume .resume_left .resume_skills ul li .skill_progress span {
+/* .resume .resume_left .resume_skills ul li .skill_progress span {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   background: #fff;
-}
+} */
 
 .resume .resume_left .resume_social .semi-bold {
   color: #fff;
@@ -232,4 +233,28 @@ body {
 
 .resume .resume_right .resume_hobby ul li:last-child:before {
   display: none;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+ /* background-color: rgb(255, 255, 255);*/
+  color: #000000;
+  text-align: left;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black;  If you want dots under the hoverable text */
 }
